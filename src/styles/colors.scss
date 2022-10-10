@@ -1,0 +1,22 @@
+:root {
+  --backgroundColor: #ffffff;
+  --fontColor: #000000;
+  --fontColorInverted: #ffffff;
+  --boardColor: #e8e8e8;
+  --boardNewTaskColor: #ffffff;
+  --taskColor: #ffffff;
+  --taskColorHover: #f0f4ff;
+  --taskCompletedFontColor: #d1d1d1;
+
+}
+
+[data-theme="dark"] {
+  --backgroundColor: #111111;
+  --fontColor: #eeeeee;
+  --boardColor: #333333;
+  --taskColor: #111111;
+  --taskColorHover: #2d2d2d;
+  --taskCompletedFontColor: #0a0a0a;
+  --boardNewTaskColor: #464646;
+  --fontColorInverted: #000000;
+}

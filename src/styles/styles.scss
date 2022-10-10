@@ -1,0 +1,40 @@
+@import 'Boards';
+@import 'Board';
+@import 'colors';
+@import 'DarkToggle';
+@import "NewTaskInput";
+@import "Task";
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./../../public/Sora-VariableFont_wght.ttf') format('truetype');
+}
+
+
+* {
+  //border: $border;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+// USAGE
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+html, body {
+  height: 100%;
+  background: var(--backgroundColor);
+  margin: 0;
+  padding: 0;
+  color: var(--fontColor);
+}

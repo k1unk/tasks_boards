@@ -1,0 +1,210 @@
+
+.newTaskInput {
+  border: 0 solid;
+  background-color: var(--boardNewTaskColor);
+  border-radius: 10px;
+  margin: 10px;
+
+  color: var(--fontColor);
+  .newTaskInputWrapper {
+
+    display: flex;
+    position: relative;
+    //border: 1px solid black;
+
+    cursor: text;
+    padding: 5px 0 5px 15px;
+
+
+    input[type="text"] {
+
+      height: 40px;
+      //  width: 180px;
+      border: 0;
+      font-size: 16px;
+      color: var(--fontColor);
+
+      &::placeholder {
+        color: var(--fontColor);
+      }
+
+      &:focus {
+        outline: none;
+        color: black;
+        &::placeholder {
+          color: black;
+        }
+      }
+    }
+
+    .true {
+
+      outline: none;
+      background-color: white;
+      width: 150px;
+    }
+
+    .false {
+      background-color: var(--boardNewTaskColor);
+
+      width: 230px;
+    }
+
+
+  }
+}
+
+.newTaskInputtrue {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  //border: 1px solid  #000000;
+  background-color: white;
+  outline: blue solid 1px;
+  outline-offset: -4px;
+}
+
+
+.optionsButtons {
+  position: absolute;
+  top: 11px;
+  margin-left: 166px;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 40px;
+  margin-bottom: -20px;
+  background-color: #8c8c8c;
+
+  .calendarOptionsContainer {
+
+    position: absolute;
+    left: 2px;
+
+    img {
+      height: 30px;
+      padding: 5px;
+
+      &:hover {
+        background-color: #e8e8e8;
+      }
+    }
+
+    .optionsCalendar {
+      position: absolute;
+      top: 34px;
+      left: 2px;
+      display: inline-block;
+      //width: 111px;
+      //height: 111px;
+      z-index: 10;
+      background-color: var(--taskColor);
+
+      .outside {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+        cursor: default;
+      }
+      .content {
+        margin: 10px;
+        position: absolute;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .priorityOptionsContainer {
+
+    position: absolute;
+    left: 2px;
+
+    &>img {
+      position: absolute;
+      top: 0px;
+      left: 29px;
+      height: 30px;
+      padding: 5px;
+
+      &:hover {
+        background-color: #e8e8e8;
+      }
+    }
+
+    .optionsPriority {
+      position: absolute;
+      top: 34px;
+      display: inline-block;
+      left: 29px;
+      z-index: 10;
+      background-color: var(--taskColor);
+
+      .outside {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+        cursor: default;
+      }
+      .content {
+        margin: 10px;
+        position: absolute;
+        cursor: pointer;
+        background-color: var(--taskColor);
+        border: 1px solid white;
+        padding: 10px;
+
+        .text {
+          font-size: 15px;
+        }
+
+        .flags {
+          display: flex;
+          margin-top: 5px;
+
+          .active {
+            background-color: #c4d7ff;
+          }
+          .flag1{
+            border: 1px solid black;
+          }
+          .flag2{
+            border: 1px solid blue;
+          }
+          .flag3{
+            border: 1px solid red;
+          }
+          img {
+            width: 30px;
+            height: 30px;
+            padding: 3px;
+            margin-right: 5px;
+            background-color: #fff7f7;
+
+            &:hover {
+              background-color: #eeeeee;
+            }
+
+            &.active {
+              background-color: #c9bebe;
+
+              &:hover {
+                background-color: #999999;
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+
+
+}
+

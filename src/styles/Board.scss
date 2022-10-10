@@ -1,0 +1,138 @@
+@import 'colors';
+
+
+.board {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 5px;
+  width: 270px;
+  box-shadow: -3px 3px 2px var(--boardColorBoxShadow);
+  padding: 4px 0 4px 4px;
+  margin: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: var(--boardColor);
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 5px 15px 10px;
+
+    .headerLeft {
+      display: flex;
+
+
+      .title {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+
+      .count {
+        font-size: 16px;
+        color: var(--fontColor);
+      }
+    }
+
+    .headerRight {
+      position: relative;
+
+      .optionsWrapper {
+        position: absolute;
+        bottom: 0px;
+        width: 26px;
+        height: 26px;
+        margin-left: -30px;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--backgroundColor);
+        }
+
+        .options {
+
+          position: absolute;
+          bottom: 3px;
+          margin-left: 4px;
+          color: var(--fontColor);
+        }
+      }
+    }
+  }
+
+
+  .tasks {
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .completed {
+    margin-top: 10px;
+
+    .header {
+      position: relative;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      .arrow {
+        position: absolute;
+        top: 4px;
+        left: 8px;
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-right: 0.09em solid #6c6c6c;
+        border-top: 0.09em solid #6c6c6c;
+        transform: rotate(135deg);
+        // margin-right: 7px;
+      }
+
+      .arrowDown {
+
+      }
+
+      .arrowRight {
+        transform: rotate(45deg);
+      }
+
+      .text {
+        margin-left: 25px;
+        font-size: 15px;
+
+      }
+
+
+      .count {
+        margin-left: 10px;
+        font-size: 15px;
+        color: #c7c7c7;
+      }
+    }
+
+    .tasks {
+      padding: 0;
+      margin-top: 10px;
+      //max-height: 88vh;
+    }
+
+    .tasksHidden {
+      margin-top: 10px;
+
+      max-height: 0px;
+      transition: max-height 0.35s ease-in;
+      overflow: hidden;
+    }
+
+    //
+    .tasksVisible {
+      margin-top: 10px;
+      max-height: 888px;
+
+      transition: max-height 0.35s ease-in;
+      overflow: hidden;
+    }
+  }
+
+}
